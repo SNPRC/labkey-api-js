@@ -1,9 +1,8 @@
 # SNPRC Fork Notes (https://github.com/SNPRC/labkey-api-js)
 
-This is the SNPRC forked version of labkey-api-js. Changes were made to support baseURL configuration and CORS headers. 
-
-Currently, Query.selectRows (Rows.ts) has been changed to create absolute URLs and pass credentials for CORS headers. Future plans include refactoring BuildURL in ActionURL.ts to handle 
-absolute vs. relative paths for all API calls. However, this will require more testing than we are willing to do at this time, so we are addressing APIs on an as needed basis.
+This is the SNPRC forked version of labkey-api-js. Changes:
+1. Support was added to use the baseURL configuration and CORS headers. 
+2. BuildURL in ActionURL.ts to was refactored to handle absolute vs. relative paths for all API calls. 
 
 # LabKey Server (Tomcat) configuration to enable CORS
 
