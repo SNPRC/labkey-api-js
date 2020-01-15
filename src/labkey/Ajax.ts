@@ -174,7 +174,7 @@ function configureHeaders(xhr: XMLHttpRequest, config: RequestOptions, options: 
         DEFAULT_HEADERS[CSRF_HEADER] = getServerContext().CSRF;
         xhr.withCredentials = true;
     }
-    
+
     for (let k in DEFAULT_HEADERS) {
         if (DEFAULT_HEADERS.hasOwnProperty(k)) {
             xhr.setRequestHeader(k, DEFAULT_HEADERS[k]);
